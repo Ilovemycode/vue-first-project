@@ -27,6 +27,8 @@ export default {
     let _this =this
     // 监听plusready事件  
     document.addEventListener( "plusready", function(){
+      alert(window.location.href);
+      console.log(window.location.href);
       // 扩展API加载完毕，现在可以正常调用扩展API
       // 获取授权列表
       plus.oauth.getServices( function(services){
